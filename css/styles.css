@@ -1,0 +1,476 @@
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Шапка */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Главный контент */
+main {
+    padding: 20px 0;
+}
+
+.section-heading {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.club-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    position: relative;
+    right: -1%;
+}
+
+.club-image img {
+    max-width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.club-details {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.representatives {
+    margin-bottom: 30px;
+}
+
+.representatives h2 {
+    margin-bottom: 10px;
+}
+
+.representatives ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.representatives ul li {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.representatives ul li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.footer-links {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.footer-links ul li a:hover {
+    color: #ffcc00;
+}
+
+/*/ Стили для кнопки наверх /*/
+.footer-linkser {
+    text-align: center;
+    margin-bottom: 20px;
+    background: #6b696b;
+    width: 100px;
+    position: relative;
+    right: -725px;
+    border-radius: 10%;
+}
+
+.footer-linkser ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-linkser ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-linkser ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-linkser ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.footer-linkser ul li a:hover {
+    color: #ffcc00;
+}
+
+
+.info {
+    font-size: 20px;
+}
+.fa-info-circle {
+    color: #007bff;
+    margin-right: 10px;
+}
+
+._6HWnw {
+    display: inline-block;
+    max-width: 100%;
+    word-break: break-word;
+}
+
+
+.contact {
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.contact-info {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.contact-info li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.report-problem-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.report-problem-btn:hover {
+    background-color: #0056b3;
+}
+
+.phone-img {
+    margin-top: 20px;
+}
+
+.phone-img img {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.club-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.club-content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#worktime {
+    margin-top: -190px;
+    position: relative;
+}
+
+#current-time {
+    position: absolute;
+    top: -10px;
+    right: 1200px;
+}
+
+
+#worktime h2 {
+    margin-bottom: 10px;
+}
+
+#worktime table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#worktime table td {
+    padding: 15px;
+    text-align: center;
+}
+
+
+#worktime table .info {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+#worktime table .bg-success {
+    background-color: #28a745;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+#worktime p {
+    margin-top: 15px;
+}
+
+/* CSS для выделения текущего дня недели */
+.highlight {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+
+.staff {
+    position: relative;
+    top: -200px;
+
+}
+
+.staff-slider img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #17a2b8;
+    margin-bottom: 10px;
+}
+
+
+/* Стили для таблицы с расписанием */
+#worktime table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+    margin-bottom: 15px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#worktime table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+}
+
+.footer-links ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-links ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-links ul li img {
+    width: 60px;
+    height: 50px;
+    border-radius: 85%;
+    transition: all .5s;
+}
+
+.footer-links ul li img:hover {
+    transform: scale(1.1);
+}
+
+
+._6HWnw {
+    display: inline-block;
+    max-width: 100%;
+    word-break: break-word;
+}
+._6HWnw:first-letter {
+    margin-right: 5px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1;
+    font-family: "Noto Serif", Times New Roman, Times, Baskerville, Georgia, serif;
+    color: #ed2324;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+
+
+@media (max-width: 670px) {
+    .club-image img {
+        max-width: 700px;
+        height: 479px;
+    }
+}
+@media (max-width: 503px) {
+    .club-image img {
+        height: 363px;
+    }
+}
+
+@media (max-width: 380px) {
+    .club-image img {
+        height: 264px;
+    }
+    .info {
+        font-size: 16px;
+    }
+    .map-widget-app {
+        position: relative;
+        right: -2%;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    .map {
+        display: none;
+    }
+    .mesto_h2 {
+        display: none;
+    }
+    .club-image img {
+        height: 270px;
+    }
+    #worktime {
+        margin-top: 100px;
+    }
+    .staff {
+        top: 28px;
+    }
+    nav ul li a{
+        font-size: 18px;
+    }
+    .staff-slider {
+        overflow: hidden;
+    }
+    .club-image img {
+        height: 260px;
+    }
+}
+
+@media (max-width: 471px) {
+    .map {
+        display: none;
+    }
+    .mesto_h2 {
+        display: none;
+    }
+    #worktime {
+        margin-top: 100px;
+    }
+    #current-time {
+        position: relative;
+        right: 0%;
+        bottom: -40%;
+    }
+    .staff {
+        top: 27px;
+    }
+    .staff-slider {
+        overflow: hidden;
+    }
+    .club-image img {
+        height: 305px;
+    }
+    .footer-linkser {
+        text-align: center;
+        margin-bottom: 20px;
+        background: #6b696b;
+        width: 100px;
+        position: relative;
+        right: -150px;
+        border-radius: 10%;
+    }
+}

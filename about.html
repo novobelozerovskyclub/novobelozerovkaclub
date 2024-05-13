@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О клубе - Новобелозеровский клуб</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 20px 0 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .about-section {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .about-section h2 {
+      margin-top: 0;
+      color: #333;
+      font-size: 2rem;
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+    }
+
+    .about-section p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .club-images {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .club-images img {
+      width: 30%;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    .footer-links {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .footer-links ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .footer-links ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    .footer-links ul li:last-child {
+      margin-right: 0;
+    }
+
+    .footer-links ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .footer-links ul li a:hover {
+      color: #ffcc00;
+    }
+
+    .contact-info {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+    }
+
+    .contact-info p:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-info a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      color: #ffcc00;
+    }
+    @media (max-width: 670px) {
+      .club-image img {
+        max-width: 700px;
+        height: 479px;
+      }
+    }
+    @media (max-width: 503px) {
+      .club-image img {
+        height: 363px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .club-image img {
+        height: 286px;
+      }
+      .info {
+        font-size: 16px;
+      }
+      .map-widget-app {
+        position: relative;
+        right: -2%;
+      }
+      header h1 {
+        font-size: 1.5rem;
+      }
+      .map {
+        display: none;
+      }
+      .mesto_h2 {
+        display: none;
+      }
+      .club-image img {
+        height: 270px;
+      }
+      #worktime {
+        margin-top: 100px; /* Увеличиваем верхний отступ */
+      }
+      .staff {
+        top: 28px;
+      }
+      nav ul li a{
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1><I>Новобелозеровский клуб</I></h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="about.html">О клубе</a></li>
+      <li><a href="info.html">Сведения о клубе</a></li>
+      <li><a href="staff.html">Персонал</a></li>
+      <li><a href="kontakt.html">Контакты</a></li>
+      <li><a href="rasp.html">Расписание</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="about-section">
+    <h2>О клубе</h2>
+    <p>Новобелозеровский клуб - это прекрасное место для встреч и общения. Мы предоставляем широкий спектр развлекательных и образовательных мероприятий для всех возрастов. В нашем клубе есть библиотека, спортивный зал, зона отдыха, а также организуем различные тематические вечера и мероприятия для наших членов.</p>
+    <p>Мы стремимся создать комфортную и дружелюбную атмосферу, где каждый посетитель сможет найти что-то интересное для себя.</p>
+
+    <div class="club-images">
+      <img src="img/library.jpg" alt="Библиотека">
+      <img src="img/gym.png" alt="Спортивный зал">
+      <!-- Добавьте сколько угодно изображений -->
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-linkser">
+    <ul>
+      <li><a href="#">Наверх</a></li>
+    </ul>
+  </div>
+  <div class="contact-info">
+    <p>&copy; 2024 Новобелозеровский клуб</p>
+    <p>Телефон: +7 (951) 215-2564</p>
+    <p>Электронная почта: novobelozerovsk_club@gmail.ru</p>
+  </div>
+  <div class="footer-links">
+    <ul>
+      <li><a href="https://ok.ru/novobeloze"><img src="img/ok.png" alt="Одноклассники"></a></li>
+      <li><a href="https://vk.com/public217125437"><img src="img/vk.png" alt="ВКонтакте"></a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

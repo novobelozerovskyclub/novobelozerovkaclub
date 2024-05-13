@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сведения о клубе - Новобелозеровский клуб</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 20px 0 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    main {
+      padding: 20px 0;
+    }
+
+    .info-section {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .category {
+      background-color: #007bff;
+      color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .category:hover {
+      background-color: #0056b3;
+    }
+
+    .icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .info {
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    .footer-links {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .footer-links ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .footer-links ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    .footer-links ul li:last-child {
+      margin-right: 0;
+    }
+
+    .footer-links ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .footer-links ul li a:hover {
+      color: #ffcc00;
+    }
+    .event-images {
+      display: flex;
+      overflow-x: auto; /* Добавляем горизонтальную прокрутку */
+      padding-bottom: 10px; /* Добавляем небольшой отступ снизу */
+      max-height: 200px; /* Фиксированная высота контейнера */
+    }
+
+    .event-images img {
+      max-width: 200px; /* Максимальная ширина изображения */
+      height: 100%; /* Высота должна заполнять контейнер */
+      border-radius: 5px;
+      margin-right: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      flex-shrink: 0; /* Отключаем сжатие изображений */
+      object-fit: cover; /* Сохраняем пропорции и заполняем контейнер */
+    }
+
+    .event-images img:last-child {
+      margin-right: 0;
+    }
+
+    .event-images img:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 670px) {
+      .club-image img {
+        max-width: 700px;
+        height: 479px;
+      }
+    }
+    @media (max-width: 503px) {
+      .club-image img {
+        height: 363px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .club-image img {
+        height: 286px;
+      }
+      .info {
+        font-size: 16px;
+      }
+      .map-widget-app {
+        position: relative;
+        right: -2%;
+      }
+      header h1 {
+        font-size: 1.5rem;
+      }
+      .map {
+        display: none;
+      }
+      .mesto_h2 {
+        display: none;
+      }
+      .club-image img {
+        height: 270px;
+      }
+      #worktime {
+        margin-top: 100px; /* Увеличиваем верхний отступ */
+      }
+      .staff {
+        top: 28px;
+      }
+      nav ul li a{
+        font-size: 18px;
+      }
+    }
+  </style>
+  <script>
+    // JavaScript-код для отображения информации при клике на категорию
+    function toggleInfo(category) {
+      var info = document.getElementById(category);
+      if (info.style.display === "block") {
+        info.style.display = "none";
+      } else {
+        info.style.display = "block";
+      }
+    }
+  </script>
+</head>
+<body>
+<header>
+  <h1><I>Новобелозеровский клуб</I></h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="about.html">О клубе</a></li>
+      <li><a href="info.html">Сведения о клубе</a></li>
+      <li><a href="staff.html">Персонал</a></li>
+      <li><a href="kontakt.html">Контакты</a></li>
+      <li><a href="rasp.html">Расписание</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="info-section">
+    <h2>Сведения о клубе</h2>
+    <div class="category" onclick="toggleInfo('history')">
+      <div class="icon"><i class="fas fa-history"></i></div>
+      <div class="title">История клуба</div>
+    </div>
+    <div id="history" class="info" style="display: none;">
+      <p><span class="_6HWnw">Н</span>овобелозеровский клуб расположен в центре деревни Новобелозеровка Таврического района. Построен клуб в 1982 году, а в 2008 г. был произведен частичный ремонт потолка, в 2021 году везде были обновлены окна с деревянных на пластиковые, поменяли входную дверь, каждый год снаружи белятся стены в нежно — бирюзовый цвет, летом высаживаем цветы, клуб огражден металлическим забором зеленого цвета, смотрится все это гармонично и красиво. Внутри фойе стены покрашены в сиреневый оттенок, в помещении для кружков стены покрашены в нежно-розовый цвет. Потолки в фойе, в комнате для кружков и гримерной плитка, на окнах тюль. В фойе, стоит очень много различных цветущих растений. В небольшом зрительном зале, стены побелены, панели выкрашены в бирюзовый цвет. А В зрительном зале кресла в количестве 100 мест. Так же в здании имеется библиотека. В Новобелозеровском клубе проводятся различные мероприятия, на каждый праздник проводятся концерты, театрализованные представления, конкурсы и народные гуляния, развлекательные программы и вечера отдыха, детские праздники. Работники клуба стараются привлекать в клуб и детей, и молодежь, и взрослое население. Участники кружков участвуют в различных районных и областных конкурсах: в вокальных, декоративно– прикладного творчества, театральных, занимают призовые места.</p>
+    </div>
+    <div class="category" onclick="toggleInfo('events')">
+      <div class="icon"><i class="fas fa-calendar-alt"></i></div>
+      <div class="title">Последния мероприятия</div>
+    </div>
+    <div id="events" class="info" style="display: none;">
+      <div class="event">
+        <h3>Концерт, Победа одна на всех</h3>
+        <p></p>
+        <div class="event-images">
+          <img src="img/event1_1.jpg" alt="">
+          <img src="img/event1_2.jpg" alt="">
+          <img src="img/event1_3.jpg" alt="">
+        </div>
+      </div>
+      <div class="event">
+        <h3>День земли</h3>
+        <p>Международный день Земли, помогает нам лишний раз задуматься, что каждое действие может как разрушить хрупкую природу, так и сохранить ее небывалую, первозданную красоту.</p>
+        <div class="event-images">
+          <img src="img/event2_1.jpg" alt="">
+          <img src="img/event2_3.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- Добавьте дополнительные категории по аналогии -->
+  </section>
+</main>
+
+<footer>
+  <div class="footer-linkser">
+    <ul>
+      <li><a href="#">Наверх</a></li>
+    </ul>
+  </div>
+  <div class="contact-info">
+    <p>&copy; 2024 Новобелозеровский клуб</p>
+    <p>Телефон: +7 (951) 215-2564</p>
+    <p>Электронная почта: novobelozerovsk_club@gmail.ru</p>
+  </div>
+  <div class="footer-links">
+    <ul>
+      <li><a href="https://ok.ru/novobeloze"><img src="img/ok.png" alt="Одноклассники"></a></li>
+      <li><a href="https://vk.com/public217125437"><img src="img/vk.png" alt="ВКонтакте"></a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

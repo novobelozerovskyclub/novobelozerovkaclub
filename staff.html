@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Персонал - Новобелозеровский клуб</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 20px 0 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    main {
+      padding: 20px 0;
+    }
+
+    .staff-section {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .staff-member {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .staff-member img {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      margin-right: 20px;
+    }
+
+    .staff-info {
+      flex: 1;
+      text-align: left;
+    }
+
+    .staff-info h3 {
+      margin-bottom: 5px;
+    }
+
+    .staff-info p {
+      margin: 5px 0;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    .footer-links {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .footer-links ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .footer-links ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    .footer-links ul li:last-child {
+      margin-right: 0;
+    }
+
+    .footer-links ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .footer-links ul li a:hover {
+      color: #ffcc00;
+    }
+
+    @media (max-width: 670px) {
+      .club-image img {
+        max-width: 700px;
+        height: 479px;
+      }
+    }
+    @media (max-width: 503px) {
+      .club-image img {
+        height: 363px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .club-image img {
+        height: 286px;
+      }
+      .info {
+        font-size: 16px;
+      }
+      .map-widget-app {
+        position: relative;
+        right: -2%;
+      }
+      header h1 {
+        font-size: 1.5rem;
+      }
+      .map {
+        display: none;
+      }
+      .mesto_h2 {
+        display: none;
+      }
+      .club-image img {
+        height: 270px;
+      }
+      #worktime {
+        margin-top: 100px; /* Увеличиваем верхний отступ */
+      }
+      .staff {
+        top: 28px;
+      }
+      nav ul li a{
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1><I>Новобелозеровский клуб</I></h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="about.html">О клубе</a></li>
+      <li><a href="info.html">Сведения о клубе</a></li>
+      <li><a href="staff.html">Персонал</a></li>
+      <li><a href="kontakt.html">Контакты</a></li>
+      <li><a href="rasp.html">Расписание</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="staff-section">
+    <h2>Наш персонал</h2>
+    <div class="staff-member">
+      <img src="img/persona.jpg" alt="Фото сотрудника">
+      <div class="staff-info">
+        <h3>Вера Ивановна</h3>
+        <p>Заведующий клуба</p>
+        <p>Email: email@gmail.com</p>
+        <p>Телефон: +7 (953) 456-7890</p>
+      </div>
+    </div>
+    <div class="staff-member">
+      <img src="img/persona1.png" alt="Фото сотрудника">
+      <div class="staff-info">
+        <h3>Елена Петрова</h3>
+        <p>Библиотекарь</p>
+        <p>Email: email@gmail.com</p>
+        <p>Телефон: +7 (997) 654-3210</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-linkser">
+    <ul>
+      <li><a href="#">Наверх</a></li>
+    </ul>
+  </div>
+  <div class="contact-info">
+    <p>&copy; 2024 Новобелозеровский клуб</p>
+    <p>Телефон: +7 (951) 215-2564</p>
+    <p>Электронная почта: novobelozerovsk_club@gmail.ru</p>
+  </div>
+  <div class="footer-links">
+    <ul>
+      <li><a href="https://ok.ru/novobeloze"><img src="img/ok.png" alt="Одноклассники"></a></li>
+      <li><a href="https://vk.com/public217125437"><img src="img/vk.png" alt="ВКонтакте"></a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
